@@ -1,6 +1,5 @@
 import { apiGetImages } from '@/api/apiGetImages.js'
 import { apiSearchImages } from '@/api/apiSearchImages.js'
-import { apiSearchHistory } from '@/api/apiSearchHistory.js'
 
 export const state = () => ({
     allImages: [],
@@ -66,8 +65,6 @@ export const actions = {
 
     async searchImages({ commit }, value) {
         const response = await apiSearchImages(value);
-        const responseSearch = await apiSearchHistory(value);
-        console.log(responseSearch);
         commit('setSearchImages', response)
     }
 }
