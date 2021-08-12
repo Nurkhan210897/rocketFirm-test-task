@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="p_page">
+    <toggle-columns />
     <images :images="favorites"/>
   </div>
 </template>

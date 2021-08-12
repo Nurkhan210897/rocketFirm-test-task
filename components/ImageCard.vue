@@ -33,9 +33,9 @@
         <nuxt-link :to="`/image-information/${card.id}`">
           <img src="@/assets/icons/maximize_icon.svg" alt=""
         /></nuxt-link>
-        <nuxt-link to="/">
+        <a :href="card.links.download" download>
           <img src="@/assets/icons/download_icon.svg" alt=""
-        /></nuxt-link>
+        /></a>
       </div>
     {{ active }}
     </div>
@@ -132,7 +132,7 @@ export default {
         display: block;
         cursor: pointer;
       }
-      img {
+      img,svg {
         max-width: 35px;
         margin: 0 22.5px;
       }

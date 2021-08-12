@@ -51,8 +51,6 @@ export const mutations = {
     switchСolumn(state, value) {
         state.valueColumn = value
     },
-
-
 }
 
 export const actions = {

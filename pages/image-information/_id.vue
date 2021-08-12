@@ -19,7 +19,7 @@
             </span>
             <a
               download="image"
-              :href="imageData.urls.regular"
+              :href="imageData.links.download"
               class="download_image"
             >
               <img src="@/assets/icons/download_iconsvg.svg" alt="" />
